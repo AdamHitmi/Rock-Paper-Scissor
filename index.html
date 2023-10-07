@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript Practice</title>
+</head>
+<body>
+ 
+<h1>Rock Paper Scissors</h1>
+
+<button onclick="
+playGame('Rock');"
+class="btn">
+<img src="backgrounds/rock-emoji.png">
+</button>
+
+<button onclick="
+playGame('Paper');
+"class="btn">
+<img src="backgrounds/paper-emoji.png">
+</button>
+
+<button onclick="
+playGame('Scissor');
+"class="btn">
+<img src="backgrounds/scissors-emoji.png">
+</button>
+
+<h2 class="result" id="result"></h2>
+<p class="js-moves"></p>
+<p class="js-score"></p>
+<button onclick="   
+      score.Wins = 0;
+      score.Losses = 0;
+      score.Ties = 0;
+
+      updateScoreElem();
+     localStorage.removeItem('score');
+" class="reset-score">Reset Score</button><br><br><br>
+
+
+<p>Youtube</p>
+<button class="subscribe-btn" onclick="subscribe()">Subscribe</button><br><br><br><br>
+
+<p>Amazon Shipping Calculator</p><br>
+<p>Orders under $40 = +$10 shipping.</p><br>
+<p>Orders over $40 = FREE shipping.</p><br>
+<input type="text" class="cost-input" placeholder="Cost of order" onkeydown="
+if(event.key === 'Enter'){
+  calculateTotal();
+}">
+<button onclick="
+     calculateTotal();
+">Calculate</button>
+<p class="total-cost"></p>
+<input type="text" placeholder="Enter Your Name" class="input-name">
+<button class="submit-btn" type="submit" onclick="submit();">Submit</button>&nbsp;<button class="reset-name" onclick="resetName()">Reset name</button>
+<p class="yourName"></p>
+<!--
+<div class="container">
+  <div class="groupe-a">1ère Année Préparatoire GA</div>
+  <div class="jours">
+    <div class="j">Jours</div>
+    <div>Matin</div>
+    <div class=midi>Apres-Midi</div>
+  </div>
+
+ <div class="scéance">
+  <div></div>
+  <div>scéance 1</div>
+  <div>scéance 2</div>
+  <div>scéance 3</div>
+  <div class="sc-4">scéance 4</div>
+ </div>
+
+ <div class="heures">
+  <div class="first">HEURES</div>
+  <div>08H30 a 10H00</div>
+  <div>10H15 a 11H45</div>
+  <div>14H30 a 16H00</div>
+  <div class="last-hour">16H15 a 17H45</div>
+ </div>
+
+ <div class="journée">
+  <div class="nom"><p>LUNDI</p></div>
+  <div class="nom1">
+    <h3>Algébre 1</h3>
+    <p>SC12 EMSI ROUDANI</p>
+  </div>
+  <div class="last"></div>
+ </div>
+
+ <div class="journée mardi">
+  <div class="nom"><p>MARDI</p></div>
+  <div></div>
+  <div class="nom1">
+    <h3>Francais 1</h3>
+    <p>SC12 EMSI ROUDANI</p>
+  </div>
+  <div class="nom1">
+    <h3>Electricité</h3>
+    <p>SC12 EMSI ROUDANI</p>
+  </div>
+  <div class="last nom1">
+    <h3>Circuits Numériques</h3>
+    <p>SC12 EMSI ROUDANI</p>
+  </div>
+ </div>
+
+ <div class="journée">
+  <div class="nom"><p>MERCREDI</p></div>
+  <div class="nom1">
+    <h3>Analyse 1</h3>
+    <p>SC23 EMSI MAARIF</p>
+  </div>
+  <div class="last"></div>
+ </div>
+
+ <div class="journée">
+  <div class="nom"><p>JEUDI</p></div>
+  <div class="nom1">
+    <h3>Language de Programmation 1</h3>
+    <p>SC23 EMSI MAARIF</p>
+  </div>
+  <div class="last nom1">
+    <h3>Algorithmiques 1</h3>
+    <p>SC23 EMSI MAARIF</p>
+  </div>
+ </div>
+
+ <div class="journée vendredi">
+  <div class="nom">
+    <p>VENDREDI</p>
+  </div>
+   <div class="span">
+    <div class="last time">
+      <p>08h30</p>
+      <p>10h30</p>
+    </div>
+   <div> 
+    <h3>TP Industriels</h3>
+    <p>G31-LCSE EMSI ROUDANI</p>
+   </div>
+   <div class="div2">
+    <h3>TP Informatiques</h3>
+    <p>G32-CC12 EMSI ROUDANI</p>
+   </div> 
+    <span></span>
+  </div>
+  <div class="span">
+    <div class="last time">
+      <p>10h45</p>
+      <p>12h45</p>
+    </div>
+   <div> 
+    <h3>TP Industriels</h3>
+    <p>G32-CC12 EMSI ROUDANI</p>
+   </div> 
+  <div class="div2">
+    <h3>TP Informatiques</h3>
+    <p>G31-LCSE EMSI ROUDANI</p>
+  </div>
+    <span></span>
+  </div>
+  <div class="p">
+    <h3>Micro Economie</h3>
+    <p>SC12 EMSI ROUDANI</p>
+  </div>
+  <div class="last p">
+    <h3>Anglais 1</h3>
+    <p>SC12 EMSI ROUDANI</p>
+  </div>
+ </div>
+
+ <div class="journée samedi">
+  <div class="nom"><p>SAMEDI</p></div>
+  <div></div>
+  <div class="last"></div>
+ </div>
+</div>
+-->
+
+   <script src="main.js"></script>
+</body>
+</html>
